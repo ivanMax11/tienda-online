@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="purple-lighten-1" dark>
+  <v-app-bar app color="purple-accent-4" dark>
     <v-toolbar-title>Mi Tienda Online</v-toolbar-title>
     <v-spacer></v-spacer>
 
