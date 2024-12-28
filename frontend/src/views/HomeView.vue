@@ -10,7 +10,7 @@
               <div class="banner-overlay">
                 <h1 class="banner-title">Bienvenido a nuestra tienda</h1>
                 <p class="banner-subtitle">Encuentra los mejores productos para tus necesidades</p>
-                <v-btn color="purple-accent-4" large @click="goToShop" class="cta-btn">¡Compra Ahora!</v-btn>
+                <v-btn color="indigo" large @click="goToShop" class="cta-btn">¡Compra Ahora!</v-btn>
               </div>
             </div>
           </v-col>
