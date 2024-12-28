@@ -34,18 +34,18 @@ export default {
     this.obtenerProductos();
   },
   methods: {
-    async obtenerProductos() {
-      try {
-        const response = await axios.get("http://localhost:5000/api/productos");
-        this.productos = response.data;
-      } catch (error) {
-        console.error("Error al obtener los productos:", error);
-      }
-    },
-    irADetalles(id) {
-      this.$router.push(`/producto/${id}`); // Redirige a la página de detalles
-    },
+  async obtenerProductos() {
+    try {
+      const response = await axios.get(`${import.meta.env.VITE_APP_API_URL}/api/productos`);
+      this.productos = response.data;
+    } catch (error) {
+      console.error("Error al obtener los productos:", error);
+    }
   },
+  irADetalles(id) {
+    this.$router.push(`/producto/${id}`); // Redirige a la página de detalles
+  },
+},
 };
 </script>
 
